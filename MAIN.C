@@ -1,28 +1,34 @@
-
-
+/* including the nessery header files*/
 #include <stdio.h>
 #include <math.h>
-
-void add(){
+/* following function takes 2 inputs and prints addtion */
+void add()
+{
     float a,b;
     printf("Enter two numbers to add\n");
     scanf("%f %f",&a,&b);
     printf("The addition is %f",a+b);
 }
-void sub(){
+/* following function takes 2 inputs and prints substraction */
+void sub()
+{
     float a,b;
     printf("Enter two numbers to substract \n");
     scanf("%f %f",&a,&b);
     printf("The substraction is %f",a-b);
 
 }
-void multiply(){
+/* following function takes 2 inputs and prints multiplication */
+void multiply()
+{
     float a,b;
     printf("Enter two numbers to multiply \n");
     scanf("%f %f",&a,&b);
     printf("The multiplication is %f",a*b);
 }
-void divide(){
+/* following function takes 2 inputs and prints division and/or (if any) remainder*/
+void divide()
+{
     float a,b,remaindier;
     printf("enter two numbers to divide\n");
     scanf("%f %f",&a,&b);
@@ -36,7 +42,10 @@ void divide(){
        printf("result of division is %2f\n",a/b);
     }
 }
-void avg(){
+/* following function takes first input asking the number of elements and that many inputs to print the avrage of all entered elements */
+/* First input not bing included in the avrage*/
+void avg()
+{
     printf("enter number of elements: ");
     int n;
     scanf("%d",&n);
@@ -48,7 +57,9 @@ void avg(){
     }
     printf("the avrage is %f",sum/n);
 }
-void fac(){
+/* following function takes 1 input and prints the factorial of the enterd number */
+void fac()
+{
     float result=1  ,num;
     printf("Enter the number ");
     scanf("%f",&num);
@@ -58,12 +69,15 @@ void fac(){
     }
     printf("the factorial is %f",result);
 }
-int main(){
+/* folowing is the main function to start execustion */
+int main()
+{
     printf("choose the operation from the following\n");
     printf("type + for addition \n type - for substraction \n type * for multiplication \n type / for division\n type # for finding avrage\n type ! for factorial\n");
     char choice;
     scanf("%c",&choice);
-    switch (choice){
+    switch (choice)     /* switch/case is used to call indivisual functions */
+    {
         case '+':
             add();
             break;
