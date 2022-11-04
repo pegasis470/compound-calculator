@@ -11,9 +11,9 @@ avg() -> This function takes input in two stages
 \# stage 2 -> a for loop sets in action with its range in 0 to entered number in stage 1 that takes the elements and adds them and after the loop it displays the quotient of the final sum and number of entered elements 
 fac() -> This takes a single input. Using a for loop it keeps multiplying the number series from 1 to the entered number and after the loop displays the final result
 main() -> this is the main function for execustion this takes input for the user leting them choose the optarion it uses switch() on the input and checks cases in +,-,*,/,#,! and default. each case calls this corresponding function in the following manner:
-+ >> addition,i.e,add()
-- >> substraction,i.e,sub()
-* >> multiplication,i.e,multiply()
-/ >> divide,i.e,divide()
+\+ >> addition,i.e,add()
+\- >> substraction,i.e,sub()
+\* >> multiplication,i.e,multiply()
+\/ >> divide,i.e,divide()
 \# >> avrage,i.e,avg()
 ! >> factorial,i.e,fac()
