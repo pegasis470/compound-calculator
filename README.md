@@ -15,5 +15,5 @@ main() -> this is the main function for execustion this takes input for the user
 - substraction,i.e,sub()
 * multiplication,i.e,multiply()
 / divide,i.e,divide()
-# avrage,i.e,avg()
+/# avrage,i.e,avg()
 ! factorial,i.e,fac()
