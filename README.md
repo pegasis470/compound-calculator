@@ -1,6 +1,6 @@
 This code is a simple mathematical calculator that performs basic arithmetic operations such as addition, subtraction, multiplication, division, average and factorial. It also has two additional functions called binary and decimal that can convert a binary number to decimal and vice versa.
 
-**How to use** \n
+**How to use**
 First, the user is prompted to choose the operation they want to perform by typing one of the following characters:\n
 '+' for addition\n
 '-' for subtraction\n
