@@ -69,6 +69,35 @@ void fac()
     }
     printf("the factorial is %f",result);
 }
+void binary()
+{
+    int binary, decimal = 0, base = 1, rem;
+    printf("Enter a binary number: ");
+    scanf("%d", &binary);
+    while (binary > 0) {
+        rem = binary % 10;
+        decimal = decimal + rem * base;
+        binary = binary / 10 ;
+        base = base * 2;
+    }
+    printf("The decimal number is: %d\n", decimal);
+
+}
+void decimal(){
+    int binary[32];
+    int n;
+    int i = 0;
+    printf("enter the decimal number");
+    scanf("%d",&n);
+    while (n > 0) {
+        binary[i] = n % 2;
+        n = n / 2;
+        i++;
+    }
+    for (int j = i - 1; j >= 0; j--)
+        printf("%d", binary[j]);
+    printf("\n");
+}
 /* folowing is the main function to start execustion */
 int main()
 {
@@ -95,7 +124,12 @@ int main()
             break;
         case '!':
             fac();
-            break;            
+            break;    
+        case '0':
+            binary();
+            break;
+        case '1':
+            decimal();  
         default:
             printf("Error invalid choice %c is not defined",choice);
             break;
