@@ -102,7 +102,7 @@ void decimal(){
 int main()
 {
     printf("choose the operation from the following\n");
-    printf("type + for addition \n type - for substraction \n type * for multiplication \n type / for division\n type # for finding avrage\n type ! for factorial\n");
+    printf("type + for addition \n type - for substraction \n type * for multiplication \n type / for division\n type # for finding avrage\n type ! for factorial\n type 0 to convert binary to decimal\n type 1 to convert decimal to binary\n"");
     char choice;
     scanf("%c",&choice);
     switch (choice)     // switch/case is used to call indivisual functions
