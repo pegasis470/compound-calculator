@@ -1,7 +1,7 @@
-/* including the nessery header files*/
+//including the nessery header files
 #include <stdio.h>
 #include <math.h>
-/* following function takes 2 inputs and prints addtion */
+// following function takes 2 inputs and prints addtion 
 void add()
 {
     float a,b;
@@ -9,7 +9,7 @@ void add()
     scanf("%f %f",&a,&b);
     printf("The addition is %f",a+b);
 }
-/* following function takes 2 inputs and prints substraction */
+// following function takes 2 inputs and prints substraction 
 void sub()
 {
     float a,b;
@@ -18,7 +18,7 @@ void sub()
     printf("The substraction is %f",a-b);
 
 }
-/* following function takes 2 inputs and prints multiplication */
+// following function takes 2 inputs and prints multiplication 
 void multiply()
 {
     float a,b;
@@ -26,7 +26,7 @@ void multiply()
     scanf("%f %f",&a,&b);
     printf("The multiplication is %f",a*b);
 }
-/* following function takes 2 inputs and prints division and/or (if any) remainder*/
+// following function takes 2 inputs and prints division and/or (if any) remainder
 void divide()
 {
     float a,b,remaindier;
@@ -42,8 +42,8 @@ void divide()
        printf("result of division is %2f\n",a/b);
     }
 }
-/* following function takes first input asking the number of elements and that many inputs to print the avrage of all entered elements */
-/* First input not bing included in the avrage*/
+// following function takes first input asking the number of elements and that many inputs to print the avrage of all entered elements 
+// First input not bing included in the avrage
 void avg()
 {
     printf("enter number of elements: ");
@@ -57,7 +57,7 @@ void avg()
     }
     printf("the avrage is %f",sum/n);
 }
-/* following function takes 1 input and prints the factorial of the enterd number */
+// following function takes 1 input and prints the factorial of the enterd number 
 void fac()
 {
     float result=1  ,num;
@@ -98,14 +98,14 @@ void decimal(){
         printf("%d", binary[j]);
     printf("\n");
 }
-/* folowing is the main function to start execustion */
+// folowing is the main function to start execustion 
 int main()
 {
     printf("choose the operation from the following\n");
     printf("type + for addition \n type - for substraction \n type * for multiplication \n type / for division\n type # for finding avrage\n type ! for factorial\n");
     char choice;
     scanf("%c",&choice);
-    switch (choice)     /* switch/case is used to call indivisual functions */
+    switch (choice)     // switch/case is used to call indivisual functions
     {
         case '+':
             add();
